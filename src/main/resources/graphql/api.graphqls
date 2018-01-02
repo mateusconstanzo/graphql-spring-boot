@@ -1,0 +1,25 @@
+type Query {
+    posts: [Post!]
+    authors: [Author!]
+}
+
+type Mutation {
+    savePost(authorId: ID!, title: String!, text : String, category : String) : Post!
+    saveAuthor(firstName: String, lastName: String): Author!
+}
+
+type Post {
+    id: ID!
+    title: String!
+    text: String!
+    category: String
+    author: Author!
+}
+
+type Author {
+    id: ID!
+    name: String!
+    firstName: String!
+    lastName: String
+    posts: [Post]!
+}
