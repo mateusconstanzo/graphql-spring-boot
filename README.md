@@ -18,19 +18,9 @@
 ```
 gradle build
  
-gradle bootRun
- 
-http://localhost:8080/graphiql
-
-```
-
-### Docker
-
-```
 docker-compose up
  
 http://localhost:8080/graphiql
-
 ```
 
 ## Query
